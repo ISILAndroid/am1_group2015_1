@@ -9,9 +9,15 @@
     <FrameLayout
         android:id="@+id/header"
         android:layout_width="fill_parent"
-        android:layout_height="60dp"
+        android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:background="@color/header">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_header"
+            android:layout_gravity="center"/>
 
     </FrameLayout>
 

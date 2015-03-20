@@ -15,6 +15,9 @@ import android.widget.Toast;
 
 import com.isil.lesson.R;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link RegisterFragment#newInstance} factory method to
@@ -116,20 +119,23 @@ public class RegisterFragment extends Fragment {
 
     private boolean validateForm() {
 
-        name= eteName.getText().toString().trim();
-        email= eteEmail.getText().toString().trim();
-        password1= etePassword1.getText().toString().trim();
-        password2= etePassword2.getText().toString().trim();
+        name = eteName.getText().toString().trim();
+        email = eteEmail.getText().toString().trim();
+        password1 = etePassword1.getText().toString().trim();
+        password2 = etePassword2.getText().toString().trim();
         clear();
 
-        if(name.equals(""))
-        {
+        if (name.equals("")) {
             eteName.setError("Ingresar el nombre");
             return false;
         }
-        if(email.isEmpty())
-        {
+        if (email.isEmpty()) {
             eteEmail.setError("Ingresar el email");
+            return false;
+        }
+        if (!isEmailValid(email))
+        {
+            eteEmail.setError("Email inválido");
             return false;
         }
         if(password1.isEmpty())
@@ -150,6 +156,26 @@ public class RegisterFragment extends Fragment {
         }
 
         return true;
+    }
+
+    public boolean isEmailValid(String email) {
+        String regExpn =
+                "^(([\\w-]+\\.)+[\\w-]+|([a-zA-Z]{1}|[\\w-]{2,}))@"
+                        +"((([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+                        +"[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\."
+                        +"([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+                        +"[0-9]{1,2}|25[0-5]|2[0-4][0-9])){1}|"
+                        +"([a-zA-Z]+[\\w-]+\\.)+[a-zA-Z]{2,4})$";
+
+        CharSequence inputStr = email;
+
+        Pattern pattern = Pattern.compile(regExpn, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(inputStr);
+
+        if(matcher.matches())
+            return true;
+        else
+            return false;
     }
 
     private void clear() {
