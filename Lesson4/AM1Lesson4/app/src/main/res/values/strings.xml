@@ -10,5 +10,10 @@
     <string name="or_log_in_using">or log in using</string>
     <string name="facebook">Facebook</string>
     <string name="twitter">Twitter</string>
+    <string name="sign_in_tw">Sign in with twitter</string>
+    <string name="sign_up_email">Sign up with</string>
+    <string name="email">Email</string>
+    <string name="already_hace_an">Already have an account?</string>
+    <string name="sign_in_now">Sign in now</string>
 
 </resources>
