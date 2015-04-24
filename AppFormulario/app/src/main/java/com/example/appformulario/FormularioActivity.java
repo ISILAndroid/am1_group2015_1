@@ -121,6 +121,12 @@ public class FormularioActivity extends Activity {
         String email= eteEmail.getText().toString().trim();
         String password= etePassword.getText().toString().trim();
 
+        if(name.isEmpty())return false;
+        if(lastName.isEmpty())return false;
+        if(usernmame.isEmpty())return false;
+        if(email.isEmpty())return false;
+        if(password.isEmpty())return false;
+
         //fecha nacimiento
         Object fnac= txtfecnac.getTag();
         if(fnac==null) return false;

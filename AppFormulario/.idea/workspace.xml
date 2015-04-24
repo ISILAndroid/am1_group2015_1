@@ -52,8 +52,8 @@
       <file leaf-file-name="FormularioActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/appformulario/FormularioActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38944724" vertical-offset="1546" max-vertical-offset="4509">
-              <caret line="82" column="55" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.73615634" vertical-offset="2690" max-vertical-offset="4671">
+              <caret line="127" column="25" selection-start-line="127" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding>
                 <element signature="e#1965#2107#0" expanded="true" />
                 <element signature="e#2102#2103#0" expanded="true" />
@@ -61,8 +61,8 @@
                 <element signature="e#2497#2498#0" expanded="true" />
                 <element signature="e#2555#2995#0" expanded="true" />
                 <element signature="e#2984#2985#0" expanded="true" />
-                <element signature="e#4617#5007#0" expanded="true" />
-                <element signature="e#5000#5001#0" expanded="true" />
+                <element signature="e#4832#5222#0" expanded="true" />
+                <element signature="e#5215#5216#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1050,7 +1050,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28548124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43393147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1107,8 +1107,8 @@
             <element signature="e#2497#2498#0" expanded="true" />
             <element signature="e#2555#2995#0" expanded="true" />
             <element signature="e#2984#2985#0" expanded="true" />
-            <element signature="e#4617#5007#0" expanded="true" />
-            <element signature="e#5000#5001#0" expanded="true" />
+            <element signature="e#4832#5222#0" expanded="true" />
+            <element signature="e#5215#5216#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1152,8 +1152,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/appformulario/FormularioActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38944724" vertical-offset="1546" max-vertical-offset="4509">
-          <caret line="82" column="55" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.73615634" vertical-offset="2690" max-vertical-offset="4671">
+          <caret line="127" column="25" selection-start-line="127" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding>
             <element signature="e#1965#2107#0" expanded="true" />
             <element signature="e#2102#2103#0" expanded="true" />
@@ -1161,8 +1161,8 @@
             <element signature="e#2497#2498#0" expanded="true" />
             <element signature="e#2555#2995#0" expanded="true" />
             <element signature="e#2984#2985#0" expanded="true" />
-            <element signature="e#4617#5007#0" expanded="true" />
-            <element signature="e#5000#5001#0" expanded="true" />
+            <element signature="e#4832#5222#0" expanded="true" />
+            <element signature="e#5215#5216#0" expanded="true" />
           </folding>
         </state>
       </provider>
