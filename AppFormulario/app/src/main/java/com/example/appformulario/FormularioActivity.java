@@ -7,9 +7,11 @@ import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.app.Dialog;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
@@ -17,6 +19,7 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FormularioActivity extends Activity {
 
@@ -27,6 +30,9 @@ public class FormularioActivity extends Activity {
     private CheckBox chkNotification;
 
     private Button btnSignUp;
+
+    private String localidad=null;
+    private int genero=0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +56,7 @@ public class FormularioActivity extends Activity {
 
         btnSignUp =(Button)findViewById(R.id.btnSignUp);
 
+        txtfecnac.setTag(null);
 		events();
 	}
 
@@ -70,7 +77,38 @@ public class FormularioActivity extends Activity {
                 if(validateForm())
                 {
 
+                }else
+                {
+                    Toast.makeText(FormularioActivity.this, "Revisar campos",
+                            Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        rbGenero.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.rbM:
+                        genero=1;
+                        break;
+                    case R.id.rbF:
+                        genero=2;
+                        break;
+                }
+            }
+        });
+
+        spLocation.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Log.v("CONSOLE","spLocation"+adapterView.getAdapter().getItem(i) );
+                localidad= adapterView.getAdapter().getItem(i).toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
             }
         });
 	}
@@ -84,10 +122,15 @@ public class FormularioActivity extends Activity {
         String password= etePassword.getText().toString().trim();
 
         //fecha nacimiento
+        Object fnac= txtfecnac.getTag();
+        if(fnac==null) return false;
 
         //localidad
+        if(localidad==null) return false;
 
         //genero
+        Log.v("CONSOLE", "genero " + genero);
+        if(genero==0)return false;
 
         //notification
         boolean notification= chkNotification.isChecked();
@@ -115,7 +158,9 @@ public class FormularioActivity extends Activity {
 							int dayOfMonth) {
 						// TODO Auto-generated method stub
 						String s= dayOfMonth+"/"+(monthOfYear+1)+"/"+year;
+                        Log.v("CONSOLE", "s "+s);
 						txtfecnac.setText(s);
+                        txtfecnac.setTag(1);
 						
 						
 					}
