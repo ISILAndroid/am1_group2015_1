@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <!-- Aquí agregamos todos los textos de la aplicación -->
     <string name="app_name">AM1Parcial</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_form">FormActivity</string>
+
+    <string name="calcular">Calcular</string>
+    <string name="registro_compra">Registro de Compra</string>
+    <string name="compra1">Compra 1</string>
+    <string name="total">Total</string>
 
 </resources>
