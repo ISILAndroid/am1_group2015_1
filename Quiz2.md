@@ -16,7 +16,7 @@ Diseñe la siguiente interfaz
 
 Si desean prácticar con otros díseños , en [Android Inspired UI](http://android.inspired-ui.com/) encontrarán varios ejemplos.
 
-#### Paleta de colores en hexadecimal
+#### Paleta de colores en hexadecimal 
 [Link](http://www.color-hex.com/)
 
 #### Opacidad
