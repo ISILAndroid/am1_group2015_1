@@ -163,7 +163,7 @@ android.permission.DEVICE_POWER
 	            android:name=".LSimpleActivity"
 	            android:label="@string/title_activity_lsimple"
 	            android:screenOrientation="portrait">
-
+  				<!-- Solo puede haber 1 tag de intent-filter -->
 	            <!--
 		            <intent-filter>
 		                <action android:name="android.intent.action.MAIN" />
