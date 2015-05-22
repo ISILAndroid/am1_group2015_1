@@ -21,6 +21,13 @@ public class HomeActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
+        /**
+         * PASOS PARA TRABAJAR CON LISTAS Y ADAPTADORES
+         *  1. DATA , puede ser un ArrayList, List, XML
+         *  2. VIEW, normalmente es un listview, gridview o un spinner
+         *  3. ADAPTER , Arraydapter, BaseAdapter, Cursor Adapter
+         *  4. SETEAR ADAPTER AL VIEW
+         */
 		//listview
 		lstPlanets =(ListView)findViewById(R.id.lstPlanets);
 		//data
@@ -33,14 +40,15 @@ public class HomeActivity extends Activity {
 		lstPlanets.setAdapter(adapter2);
 		
 		//events
-		lstPlanets.setOnItemClickListener(new OnItemClickListener() {
+		lstPlanets.setOnItemClickListener(new OnItemClickListener()
+        {
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position,
 					long id) {
 				// TODO Auto-generated method stub
 				String item= parent.getAdapter().getItem(position).toString();
-				Toast.makeText(HomeActivity.this, "CLICK "+item, Toast.LENGTH_LONG).show();
+				Toast.makeText(HomeActivity.this, "CLICK "+item, Toast.LENGTH_SHORT).show();
 				
 			}
 		});
@@ -61,9 +69,8 @@ public class HomeActivity extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.home, menu);
-		return true;
+
+		return false;
 	}
 
 }
