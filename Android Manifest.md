@@ -36,12 +36,43 @@ app/src/main/AndroidManifest.xml
 	</manifest>
  ```
 
+## Etiquetas
+ ```
+	<action> 
+	<activity> 
+	<activity-alias> 
+	<application> 
+	<category> 
+	<data> 
+	<grant-uri-permission> 
+	<instrumentation> 
+	<intent-filter> 
+	<manifest> 
+	<meta-data> 
+	<permission> 
+	<permission-group> 
+	<permission-tree> 
+	<provider> 
+	<receiver> 
+	<service> 
+	<supports-screens> 
+	<uses-configuration> 
+	<uses-feature> 
+	<uses-library> 
+	<uses-permission> 
+	<uses-sdk>
+ ```
 ## Permisos
-
+ ```
+android.permission.CALL_EMERGENCY_NUMBERS 
+android.permission.READ_OWNER_DATA 
+android.permission.SET_WALLPAPER 
+android.permission.DEVICE_POWER
+ ```
 
 Referencia
-
 [Android Manifest](http://developer.android.com/guide/topics/manifest/manifest-intro.html)
 
- * [Github AM1](https://github.com/ISILAndroid/am1_group2015_1)
+
+* [Github AM1](https://github.com/ISILAndroid/am1_group2015_1)
 
