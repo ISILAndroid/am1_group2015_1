@@ -1,5 +1,6 @@
 package com.example.applistsimple;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -49,6 +50,7 @@ public class HomeActivity extends Activity {
 				// TODO Auto-generated method stub
 				String item= parent.getAdapter().getItem(position).toString();
 				Toast.makeText(HomeActivity.this, "CLICK "+item, Toast.LENGTH_SHORT).show();
+                gotoSimple(item);
 				
 			}
 		});
@@ -67,7 +69,14 @@ public class HomeActivity extends Activity {
 		});
 	}
 
-	@Override
+    private void gotoSimple(String item)
+    {
+        Intent intent= new Intent(this,SimpleActivity.class);
+        intent.putExtra("DATA",item);
+        startActivity(intent);
+    }
+
+    @Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		return false;
