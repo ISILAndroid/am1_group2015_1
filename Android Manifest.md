@@ -70,7 +70,7 @@ android.permission.SET_WALLPAPER
 android.permission.DEVICE_POWER
  ```
 
- ## Ejemplos
+## Ejemplos
 
   ```
  <?xml version="1.0" encoding="utf-8"?>
