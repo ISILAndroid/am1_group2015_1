@@ -1,8 +1,8 @@
 # am1_group2015_1
-##Aplicaciones Móviles 1 - Grupo 2015-I
-##Instructor : Eduardo José Medina Alfaro isil@qd.pe
+###Aplicaciones Móviles 1 - Grupo 2015-I
+Instructor : Eduardo José Medina Alfaro isil@qd.pe
 
-#Listas Compuestas y adapters.
+#Lección 7 - Listas Compuestas y adapters.
 Pasos para trabajar con listas compuestas
  * Instanciar la vista, listview o gridview
  * Crear el layout(XML) y la entidad(Clase)
